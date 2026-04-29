@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Documentação - KAIRUS</title>
-    <meta name="description" content="Documentação completa do KAIRUS - Aplicativo seguro para anotações com criptografia AES-256">
+    <meta name="description"
+        content="Documentação completa do KAIRUS - Aplicativo seguro para anotações com criptografia AES-256">
     <meta name="theme-color" content="#0D0D0D">
     <link rel="icon" type="image/png" href="../icon.png">
     <link rel="stylesheet" href="/web/css/style-doc.css">
     <!-- Prism.js para syntax highlighting -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet">
 </head>
+
 <body>
     <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
 
@@ -94,8 +97,9 @@
                 <!-- Introdução -->
                 <section id="introducao" class="doc-section">
                     <h1>📖 Introdução ao KAIRUS</h1>
-                    <p class="lead">KAIRUS é um aplicativo desktop para anotações seguras com criptografia AES-256, desenvolvido em Python com PySide6.</p>
-                    
+                    <p class="lead">KAIRUS é um aplicativo desktop para anotações seguras com criptografia AES-256,
+                        desenvolvido em Python com PySide6.</p>
+
                     <div class="feature-highlight">
                         <div class="highlight-item">
                             <span class="highlight-icon">🔐</span>
@@ -128,8 +132,9 @@
                     </div>
 
                     <h2>Sobre o KAIRUS</h2>
-                    <p>O KAIRUS foi desenvolvido com foco em privacidade e segurança. Todas as notas são criptografadas localmente antes de serem salvas, garantindo que apenas você tenha acesso ao seu conteúdo.</p>
-                    
+                    <p>O KAIRUS foi desenvolvido com foco em privacidade e segurança. Todas as notas são criptografadas
+                        localmente antes de serem salvas, garantindo que apenas você tenha acesso ao seu conteúdo.</p>
+
                     <div class="info-box">
                         <strong>💡 Dica:</strong> O KAIRUS é 100% offline e não coleta nenhum dado do usuário.
                     </div>
@@ -138,10 +143,12 @@
                 <!-- Instalação -->
                 <section id="instalacao" class="doc-section">
                     <h2>⚙️ Instalação</h2>
-                    
+
                     <h3>Windows (Instalador)</h3>
                     <ol>
-                        <li>Baixe o instalador <code>kairus.exe</code> da <a href="https://github.com/EduardoDosSantosFerreira/kairus/releases">página de releases</a></li>
+                        <li>Baixe o instalador <code>kairus.exe</code> da <a
+                                href="https://github.com/EduardoDosSantosFerreira/kairus/releases">página de
+                                releases</a></li>
                         <li>Execute o arquivo baixado</li>
                         <li>Siga as instruções do assistente de instalação</li>
                         <li>Após a instalação, inicie o KAIRUS pelo atalho na área de trabalho</li>
@@ -200,9 +207,10 @@ python main.py</code></pre>
                 <!-- Primeiros Passos -->
                 <section id="primeiros-passos" class="doc-section">
                     <h2>🚀 Primeiros Passos</h2>
-                    
+
                     <h3>1. Primeira execução</h3>
-                    <p>Ao iniciar o KAIRUS pela primeira vez, você precisará definir uma senha mestra que protegerá todas as suas notas.</p>
+                    <p>Ao iniciar o KAIRUS pela primeira vez, você precisará definir uma senha mestra que protegerá
+                        todas as suas notas.</p>
                     <div class="warning-box">
                         <strong>⚠️ Atenção:</strong> A senha mestra não é recuperável. Mantenha-a em local seguro!
                     </div>
@@ -223,14 +231,15 @@ python main.py</code></pre>
                     </ol>
 
                     <div class="tip-box">
-                        <strong>💡 Dica:</strong> Use pastas com senha para organizar notas por projeto ou nível de sensibilidade.
+                        <strong>💡 Dica:</strong> Use pastas com senha para organizar notas por projeto ou nível de
+                        sensibilidade.
                     </div>
                 </section>
 
                 <!-- Interface -->
                 <section id="interface" class="doc-section">
                     <h2>🖥️ Interface do Usuário</h2>
-                    
+
                     <div class="interface-layout">
                         <div class="layout-area">
                             <h4>1. Barra de Ferramentas</h4>
@@ -251,7 +260,8 @@ python main.py</code></pre>
                     </div>
 
                     <div class="screenshot-placeholder">
-                        <img src="img/dashboard.png" alt="KAIRUS Interface" onerror="this.src='https://placehold.co/800x500/161616/3ba07a?text=KAIRUS+Interface'">
+                        <img src="img/dashboard.png" alt="KAIRUS Interface"
+                            onerror="this.src='https://placehold.co/800x500/161616/3ba07a?text=KAIRUS+Interface'">
                         <p class="caption">Interface principal do KAIRUS</p>
                     </div>
                 </section>
@@ -259,7 +269,7 @@ python main.py</code></pre>
                 <!-- Notas -->
                 <section id="notas" class="doc-section">
                     <h2>📝 Gerenciamento de Notas</h2>
-                    
+
                     <h3>Criar Nota</h3>
                     <pre><code class="language-python"># Exemplo via API interna
 note_manager.create_note(
@@ -269,7 +279,8 @@ note_manager.create_note(
 )</code></pre>
 
                     <h3>Editar Nota</h3>
-                    <p>Clique em qualquer nota na árvore de pastas para abri-la no editor. As alterações são salvas automaticamente.</p>
+                    <p>Clique em qualquer nota na árvore de pastas para abri-la no editor. As alterações são salvas
+                        automaticamente.</p>
 
                     <h3>Excluir Nota</h3>
                     <p>Selecione a nota e pressione <kbd>Delete</kbd> ou clique com botão direito → Excluir.</p>
@@ -279,7 +290,7 @@ note_manager.create_note(
                 <section id="pastas" class="doc-section">
                     <h2>🔒 Pastas Protegidas</h2>
                     <p>Pastas com senha oferecem uma camada extra de segurança para grupos específicos de notas.</p>
-                    
+
                     <h3>Como funciona</h3>
                     <ul>
                         <li>Cada pasta pode ter sua própria senha independente</li>
@@ -289,7 +300,8 @@ note_manager.create_note(
                     </ul>
 
                     <div class="security-note">
-                        <strong>🛡️ Nota de Segurança:</strong> A senha da pasta não é armazenada em nenhum lugar — apenas o hash.
+                        <strong>🛡️ Nota de Segurança:</strong> A senha da pasta não é armazenada em nenhum lugar —
+                        apenas o hash.
                     </div>
                 </section>
 
@@ -340,7 +352,7 @@ note_manager.create_note(
                         <li><strong>PDF</strong> - Preserva formatação e é ideal para compartilhamento</li>
                         <li><strong>TXT</strong> - Texto puro, compatível com qualquer editor</li>
                     </ul>
-                    
+
                     <h3>Como exportar</h3>
                     <ol>
                         <li>Abra a nota que deseja exportar</li>
@@ -355,23 +367,42 @@ note_manager.create_note(
                 <section id="criptografia" class="doc-section">
                     <h2>🔐 Criptografia</h2>
                     <p>O KAIRUS implementa padrões de segurança robustos para proteger seus dados.</p>
-                    
+
                     <h3>Algoritmos utilizados</h3>
                     <table class="security-table">
                         <thead>
-                            <tr><th>Componente</th><th>Especificação</th></tr>
+                            <tr>
+                                <th>Componente</th>
+                                <th>Especificação</th>
+                            </tr>
                         </thead>
                         <tbody>
-                            <tr><td>Criptografia de Notas</td><td>AES-256-CBC</td></tr>
-                            <tr><td>Derivação de Chave</td><td>PBKDF2 (100.000 iterações)</td></tr>
-                            <tr><td>Salt</td><td>32 bytes (único por nota)</td></tr>
-                            <tr><td>Padding</td><td>PKCS7</td></tr>
-                            <tr><td>Hash de Senhas</td><td>PBKDF2 + SHA-256</td></tr>
+                            <tr>
+                                <td>Criptografia de Notas</td>
+                                <td>AES-256-CBC</td>
+                            </tr>
+                            <tr>
+                                <td>Derivação de Chave</td>
+                                <td>PBKDF2 (100.000 iterações)</td>
+                            </tr>
+                            <tr>
+                                <td>Salt</td>
+                                <td>32 bytes (único por nota)</td>
+                            </tr>
+                            <tr>
+                                <td>Padding</td>
+                                <td>PKCS7</td>
+                            </tr>
+                            <tr>
+                                <td>Hash de Senhas</td>
+                                <td>PBKDF2 + SHA-256</td>
+                            </tr>
                         </tbody>
                     </table>
 
                     <div class="info-box">
-                        <strong>🔬 Como funciona:</strong> Cada nota é criptografada com uma chave derivada da sua senha mestra e um salt único. Isso garante que mesmo notas idênticas produzam criptogramas diferentes.
+                        <strong>🔬 Como funciona:</strong> Cada nota é criptografada com uma chave derivada da sua senha
+                        mestra e um salt único. Isso garante que mesmo notas idênticas produzam criptogramas diferentes.
                     </div>
                 </section>
 
@@ -379,7 +410,7 @@ note_manager.create_note(
                 <section id="armazenamento" class="doc-section">
                     <h2>💾 Armazenamento de Dados</h2>
                     <p>Todos os dados são armazenados localmente no diretório do usuário.</p>
-                    
+
                     <pre><code class="language-txt"># Localização dos dados do KAIRUS
 C:\Users\[Usuario]\AppData\Local\kairus\
 ├── config/
@@ -390,7 +421,8 @@ C:\Users\[Usuario]\AppData\Local\kairus\
 └── logs/</code></pre>
 
                     <div class="tip-box">
-                        <strong>💡 Backup:</strong> Para fazer backup dos dados, copie toda a pasta <code>kairus</code> para um local seguro.
+                        <strong>💡 Backup:</strong> Para fazer backup dos dados, copie toda a pasta <code>kairus</code>
+                        para um local seguro.
                     </div>
                 </section>
 
@@ -417,14 +449,16 @@ C:\Users\[Usuario]\AppData\Local\kairus\
                 <!-- API Reference -->
                 <section id="api" class="doc-section">
                     <h2>📚 API Reference</h2>
-                    
+
                     <h3>SecurityManager</h3>
                     <div class="api-card">
-                        <div class="api-signature">SecurityManager.encrypt_data(data: bytes, password: str) -> bytes</div>
+                        <div class="api-signature">SecurityManager.encrypt_data(data: bytes, password: str) -> bytes
+                        </div>
                         <p>Criptografa dados usando AES-256-CBC com PBKDF2.</p>
                     </div>
                     <div class="api-card">
-                        <div class="api-signature">SecurityManager.decrypt_data(encrypted_data: bytes, password: str) -> bytes</div>
+                        <div class="api-signature">SecurityManager.decrypt_data(encrypted_data: bytes, password: str) ->
+                            bytes</div>
                         <p>Descriptografa dados previamente criptografados.</p>
                     </div>
                     <div class="api-card">
@@ -434,7 +468,8 @@ C:\Users\[Usuario]\AppData\Local\kairus\
 
                     <h3>NoteManager</h3>
                     <div class="api-card">
-                        <div class="api-signature">NoteManager.create_note(title: str, content: str, folder_id: str = None) -> Note</div>
+                        <div class="api-signature">NoteManager.create_note(title: str, content: str, folder_id: str =
+                            None) -> Note</div>
                         <p>Cria uma nova nota.</p>
                     </div>
                     <div class="api-card">
@@ -442,7 +477,8 @@ C:\Users\[Usuario]\AppData\Local\kairus\
                         <p>Recupera uma nota pelo ID.</p>
                     </div>
                     <div class="api-card">
-                        <div class="api-signature">NoteManager.export_note(note_id: str, format: str, path: str) -> bool</div>
+                        <div class="api-signature">NoteManager.export_note(note_id: str, format: str, path: str) -> bool
+                        </div>
                         <p>Exporta nota para PDF ou TXT.</p>
                     </div>
                 </section>
@@ -451,7 +487,7 @@ C:\Users\[Usuario]\AppData\Local\kairus\
                 <section id="contribuicao" class="doc-section">
                     <h2>🤝 Contribuição</h2>
                     <p>KAIRUS é open source e aceita contribuições!</p>
-                    
+
                     <h3>Como contribuir</h3>
                     <ol>
                         <li>Faça um fork do repositório</li>
@@ -469,14 +505,15 @@ C:\Users\[Usuario]\AppData\Local\kairus\
                 <!-- FAQ Documentação -->
                 <section id="faq-doc" class="doc-section">
                     <h2>❓ Perguntas Frequentes</h2>
-                    
+
                     <div class="faq-doc-item">
                         <h4>O KAIRUS é realmente gratuito?</h4>
                         <p>Sim! O KAIRUS é completamente gratuito e de código aberto (licença MIT).</p>
                     </div>
                     <div class="faq-doc-item">
                         <h4>Como recuperar uma senha esquecida?</h4>
-                        <p>Infelizmente, por questões de segurança, não há recuperação. Use um gerenciador de senhas para armazenar sua senha mestra.</p>
+                        <p>Infelizmente, por questões de segurança, não há recuperação. Use um gerenciador de senhas
+                            para armazenar sua senha mestra.</p>
                     </div>
                     <div class="faq-doc-item">
                         <h4>O KAIRUS coleta meus dados?</h4>
@@ -484,25 +521,30 @@ C:\Users\[Usuario]\AppData\Local\kairus\
                     </div>
                     <div class="faq-doc-item">
                         <h4>Como reportar um bug?</h4>
-                        <p>Abra uma issue no <a href="https://github.com/EduardoDosSantosFerreira/kairus/issues">GitHub</a> com a descrição detalhada do problema.</p>
+                        <p>Abra uma issue no <a
+                                href="https://github.com/EduardoDosSantosFerreira/kairus/issues">GitHub</a> com a
+                            descrição detalhada do problema.</p>
                     </div>
                 </section>
 
                 <!-- Solução de Problemas -->
                 <section id="solucao-problemas" class="doc-section">
                     <h2>🔧 Solução de Problemas</h2>
-                    
+
                     <div class="problem-card">
                         <h4>O aplicativo não inicia</h4>
-                        <p><strong>Solução:</strong> Certifique-se de que o Python 3.8+ está instalado e que todas as dependências foram instaladas corretamente.</p>
+                        <p><strong>Solução:</strong> Certifique-se de que o Python 3.8+ está instalado e que todas as
+                            dependências foram instaladas corretamente.</p>
                     </div>
                     <div class="problem-card">
                         <h4>Erro de criptografia ao abrir nota</h4>
-                        <p><strong>Solução:</strong> Isso pode ocorrer se a senha mestra foi alterada. Restaure a senha original ou use um backup dos dados.</p>
+                        <p><strong>Solução:</strong> Isso pode ocorrer se a senha mestra foi alterada. Restaure a senha
+                            original ou use um backup dos dados.</p>
                     </div>
                     <div class="problem-card">
                         <h4>Nota não salva automaticamente</h4>
-                        <p><strong>Solução:</strong> Verifique se a pasta tem permissão de escrita. O problema também pode ser resolvido com <kbd>F5</kbd> para recarregar.</p>
+                        <p><strong>Solução:</strong> Verifique se a pasta tem permissão de escrita. O problema também
+                            pode ser resolvido com <kbd>F5</kbd> para recarregar.</p>
                     </div>
                 </section>
 
@@ -529,7 +571,7 @@ C:\Users\[Usuario]\AppData\Local\kairus\
         // Menu mobile
         const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
         const navLinks = document.querySelector('.nav-links');
-        
+
         if (mobileMenuBtn) {
             mobileMenuBtn.addEventListener('click', () => {
                 const expanded = mobileMenuBtn.getAttribute('aria-expanded') === 'true';
@@ -544,7 +586,7 @@ C:\Users\[Usuario]\AppData\Local\kairus\
             if (navbar) {
                 navbar.classList.toggle('scrolled', window.scrollY > 50);
             }
-            
+
             // Back to top button
             const backBtn = document.getElementById('backToTop');
             if (backBtn) {
@@ -559,7 +601,7 @@ C:\Users\[Usuario]\AppData\Local\kairus\
 
         // Scroll suave para links internos
         document.querySelectorAll('.sidebar-nav a, .nav-links a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
+            anchor.addEventListener('click', function (e) {
                 const href = this.getAttribute('href');
                 if (href && href.startsWith('#')) {
                     e.preventDefault();
@@ -568,10 +610,10 @@ C:\Users\[Usuario]\AppData\Local\kairus\
                         const offset = 80;
                         const elementPosition = target.offsetTop - offset;
                         window.scrollTo({ top: elementPosition, behavior: 'smooth' });
-                        
+
                         // Atualizar URL sem scroll
                         history.pushState(null, null, href);
-                        
+
                         // Ativar link na sidebar
                         document.querySelectorAll('.sidebar-nav a').forEach(a => a.classList.remove('active'));
                         this.classList.add('active');
@@ -584,7 +626,7 @@ C:\Users\[Usuario]\AppData\Local\kairus\
         window.addEventListener('scroll', () => {
             const sections = document.querySelectorAll('.doc-section');
             const navLinks = document.querySelectorAll('.sidebar-nav a');
-            
+
             let current = '';
             sections.forEach(section => {
                 const sectionTop = section.offsetTop - 100;
@@ -593,7 +635,7 @@ C:\Users\[Usuario]\AppData\Local\kairus\
                     current = '#' + section.getAttribute('id');
                 }
             });
-            
+
             navLinks.forEach(link => {
                 link.classList.remove('active');
                 if (link.getAttribute('href') === current) {
@@ -613,4 +655,5 @@ C:\Users\[Usuario]\AppData\Local\kairus\
         });
     </script>
 </body>
+
 </html>

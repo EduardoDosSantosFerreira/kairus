@@ -1,0 +1,177 @@
+# ====================
+# kairus - Git Ignore
+# ====================
+
+# Database / User Data (IGNORAR - dados sensíveis do usuário)
+data/
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+*.db-wal
+*.db-shm
+
+# Python Cache (IGNORAR - arquivos temporários do Python)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.pyc
+*.pyo
+
+# Build artifacts (IGNORAR - arquivos gerados durante build)
+build/
+dist/
+*.spec
+*.manifest
+*.pyd
+*.exe
+!icon.png
+
+# Virtual Environments (IGNORAR)
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+virtualenv/
+venv*/
+
+# Testing cache (IGNORAR)
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.tox/
+.dmypy.json
+dmypy.json
+
+# Distribution / packaging (IGNORAR)
+develop-eggs/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# IDEs (IGNORAR)
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+*.sublime-workspace
+*.sublime-project
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS generated files (IGNORAR)
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.bak
+*.tmp
+*.temp
+*.backup
+
+# Logs (IGNORAR)
+*.log
+logs/
+*.pid
+
+# Secret files (IGNORAR)
+*.secret
+*.key
+*.pem
+*.crt
+.env
+.secrets
+*.p12
+*.pfx
+
+# Project specific - exports (IGNORAR)
+exports/
+temp/
+output/
+*.pdf
+*.txt
+!requirements.txt
+!README.md
+
+# Jupyter Notebook (IGNORAR)
+.ipynb_checkpoints/
+*.ipynb
+
+# Pyre type checker (IGNORAR)
+.pyre/
+
+# pytype static type analyzer (IGNORAR)
+.pytype/
+
+# Cython debug symbols (IGNORAR)
+cython_debug/
+
+# Coverage reports (IGNORAR)
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# MyPy (IGNORAR)
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker (IGNORAR)
+.pyre/
+
+# pytype static type analyzer (IGNORAR)
+.pytype/
+
+# Backup files (IGNORAR)
+*.backup
+*.old
+*.orig
+
+# ====================
+# NOTAS IMPORTANTES
+# ====================
+# 
+# ✅ A pasta data/ é IGNORADA (dados sensíveis dos usuários)
+# ✅ __pycache__ é IGNORADO (cache do Python)
+# ✅ build/ é IGNORADO (arquivos temporários de build)
+# ❌ dist/ NÃO está na lista - será incluído no commit
+# ❌ O executável KAIRUS.exe será versionado via GitHub Releases
+#
+# Para distribuição do executável, use GitHub Releases:
+# https://github.com/EduardoDosSantosFerreira/kairus/releases

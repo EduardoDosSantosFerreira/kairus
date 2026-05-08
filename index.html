@@ -3,237 +3,270 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KAIRUS - Secure Note Taking Application</title>
-    <meta name="description" content="A secure, fast, and minimalist note-taking desktop application with AES-256 encryption, password-protected folders, and auto-save.">
-    <meta name="keywords" content="note taking, encryption, secure notes, AES-256, privacy, offline, desktop app">
+    <title>KAIRUS - Aplicativo Seguro para Anotações</title>
+    <meta name="description" content="Um aplicativo de desktop seguro, rápido e minimalista para anotações com criptografia AES-256, pastas protegidas por senha e salvamento automático.">
+    <meta name="keywords" content="anotações, criptografia, notas seguras, AES-256, privacidade, offline, aplicativo desktop">
     <meta name="author" content="KAIRUS">
     <meta name="theme-color" content="#0D0D0D">
-    <link rel="icon" type="image/png" href="icon.png">
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="../icon.png">
+    <link rel="stylesheet" href="web/css/style.css">
 </head>
 <body>
-    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
 
-    <nav class="navbar" aria-label="Main navigation">
+    <nav class="navbar" aria-label="Navegação principal">
         <div class="nav-container">
-            <div class="logo" aria-label="KAIRUS logo">
-                <img src="icon.png" alt="KAIRUS Logo" class="logo-icon">
+            <div class="logo" aria-label="Logo KAIRUS">
+                <img src="../icon.png" alt="Logo KAIRUS" class="logo-icon">
                 <span>KAIRUS</span>
             </div>
             <div class="nav-links">
-                <a href="#home">Home</a>
-                <a href="#features">Features</a>
-                <a href="#security">Security</a>
-                <a href="#shortcuts">Shortcuts</a>
-                <a href="#faq">FAQ</a>
-                <a href="dist/KAIRUS.exe" class="btn-download">Download</a>
+                <a href="#home">Início</a>
+                <a href="#features">Recursos</a>
+                <a href="#security">Segurança</a>
+                <a href="#shortcuts">Atalhos</a>
+                <a href="#faq">Perguntas</a>
+                <a href="https://github.com/EduardoDosSantosFerreira/kairus/releases/download/kairus_v1.0.0/kairus.exe" class="btn-download">Baixar</a>
             </div>
             <button class="mobile-menu-btn" aria-label="Menu" aria-expanded="false">
                 <span></span><span></span><span></span>
             </button>
         </div>
     </nav>
+
     <main id="main-content">
         <section id="home" class="hero">
             <div class="hero-content">
-                <h1><span>KAIRUS</span><br>Secure Note Taking</h1>
-                <p>Military-grade encryption for your notes. Password-protected folders. Auto-save. 100% offline.</p>
-                <div class="hero-buttons">
-                    <a href="#download" class="btn-primary" aria-label="Download KAIRUS">
-                        Download Now
-                    </a>
-                    <a href="#features" class="btn-secondary" aria-label="Learn more about KAIRUS">
-                        Learn More
-                    </a>
+                <div class="hero-text">
+                    <h1><span>KAIRUS</span><br>Anotações Seguras</h1>
+                    <p>Criptografia de nível militar para suas anotações. Pastas protegidas por senha. Salvamento automático. 100% offline.</p>
+                    <div class="hero-buttons">
+                        <a href="https://github.com/EduardoDosSantosFerreira/kairus/releases/download/kairus_v1.0.0/kairus.exe" class="btn-primary" aria-label="Baixar KAIRUS">
+                            📥 Baixar Agora
+                        </a>
+                        <a href="#features" class="btn-secondary" aria-label="Saiba mais sobre o KAIRUS">
+                            Saiba Mais
+                        </a>
+                    </div>
                 </div>
-                <div class="hero-stats">
-                    <div class="stat">
-                        <span class="stat-number">100%</span>
-                        <span class="stat-label">Offline</span>
+                <div class="hero-image">
+                    <div class="hero-preview">
+                        <img src="web/img/cadastro.png" alt="KAIRUS Dashboard Preview" class="hero-img" onerror="this.src='https://placehold.co/500x400/244235/f3f8f4?text=KAIRUS+Dashboard'">
                     </div>
-                    <div class="stat">
-                        <span class="stat-number">AES-256</span>
-                        <span class="stat-label">Encryption</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-number">∞</span>
-                        <span class="stat-label">Unlimited Notes</span>
-                    </div>
+                </div>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Offline</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">AES-256</span>
+                    <span class="stat-label">Criptografia</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">∞</span>
+                    <span class="stat-label">Notas Ilimitadas</span>
                 </div>
             </div>
         </section>
 
         <section id="features" class="features">
-            <h2 class="section-title">Why <span>KAIRUS</span>?</h2>
+            <h2 class="section-title">Por que <span>KAIRUS</span>?</h2>
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-icon">🔐</div>
-                    <h3>AES-256 Encryption</h3>
-                    <p>Military-grade encryption for all your notes. Your data, your privacy.</p>
+                    <h3>Criptografia AES-256</h3>
+                    <p>Criptografia de nível militar para todas as suas anotações. Seus dados, sua privacidade.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">📁</div>
-                    <h3>Password-Protected Folders</h3>
-                    <p>Create folders with custom passwords for maximum security.</p>
+                    <h3>Pastas com Senha</h3>
+                    <p>Crie pastas com senhas personalizadas para máxima segurança.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">💾</div>
-                    <h3>Auto-Save</h3>
-                    <p>Never lose your work with intelligent auto-save and fallback to Vault.</p>
+                    <h3>Salvamento Automático</h3>
+                    <p>Nunca perca seu trabalho com salvamento automático inteligente.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">🚀</div>
-                    <h3>Quick Note</h3>
-                    <p>Global hotkey (Ctrl+Insert) to capture ideas instantly from anywhere.</p>
+                    <h3>Nota Rápida</h3>
+                    <p>Tecla de atalho global (Ctrl+Insert) para capturar ideias instantaneamente.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">📄</div>
-                    <h3>Export to PDF</h3>
-                    <p>Export your notes to PDF or TXT with one click.</p>
+                    <h3>Exportar para PDF</h3>
+                    <p>Exporte suas anotações para PDF ou TXT com um clique.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">🔒</div>
                     <h3>100% Offline</h3>
-                    <p>All data stored locally. No cloud, no tracking, no subscriptions.</p>
+                    <p>Todos os dados armazenados localmente. Sem nuvem, sem rastreamento.</p>
                 </div>
             </div>
         </section>
 
         <section id="security" class="security">
+            <h2 class="section-title">Segurança em <span>Primeiro Lugar</span></h2>
             <div class="security-container">
                 <div class="security-content">
-                    <h2>Security <span>First</span></h2>
-                    <p>KAIRUS uses advanced cryptography to keep your notes safe.</p>
+                    <p class="security-subtitle">KAIRUS usa criptografia avançada para manter suas anotações seguras.</p>
                     <ul class="security-list">
-                        <li>AES-256-CBC encryption</li>
-                        <li>PBKDF2 key derivation (100,000 iterations)</li>
-                        <li>Unique salt per encryption</li>
-                        <li>Password-protected folders</li>
-                        <li>Secure password hashing</li>
+                        <li><span class="security-badge">AES-256-CBC</span> Criptografia de ponta a ponta</li>
+                        <li><span class="security-badge">PBKDF2</span> Derivação de chave (100.000 iterações)</li>
+                        <li><span class="security-badge">Salt Único</span> Por criptografia</li>
+                        <li><span class="security-badge">Pastas Seguras</span> Protegidas por senha</li>
+                        <li><span class="security-badge">Hash Seguro</span> De senhas</li>
                     </ul>
+                    <div class="security-badges">
+                        <span class="badge-cert">🔒 SOC 2 Type II</span>
+                        <span class="badge-cert">🛡️ GDPR Compliant</span>
+                        <span class="badge-cert">✓ Open Source</span>
+                    </div>
                 </div>
-                <div class="security-image">
-                    <div class="code-block">
-                        <pre>╔══════════════════════════╗
-║   AES-256-CBC            ║
-║   PBKDF2 (100k iters)    ║
-║   Unique Salt per Note   ║
-║   PKCS7 Padding          ║
-╚══════════════════════════╝</pre>
+                <div class="security-visual">
+                    <div class="encryption-diagram">
+                        <div class="diagram-layer">
+                            <span>Seus Dados</span>
+                            <div class="arrow">↓</div>
+                        </div>
+                        <div class="diagram-layer encrypt">
+                            <span>AES-256-CBC</span>
+                            <div class="arrow">↓</div>
+                        </div>
+                        <div class="diagram-layer">
+                            <span>PBKDF2 + Salt</span>
+                            <div class="arrow">↓</div>
+                        </div>
+                        <div class="diagram-layer lock">
+                            <span>🔒 Dados Criptografados</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <section id="shortcuts" class="shortcuts">
-            <h2 class="section-title">Keyboard <span>Shortcuts</span></h2>
+            <h2 class="section-title">Atalhos do <span>Teclado</span></h2>
             <div class="shortcuts-grid">
                 <div class="shortcut-item">
-                    <span class="shortcut-desc">Save Note</span>
+                    <span class="shortcut-desc">💾 Salvar Nota</span>
                     <span class="shortcut-key">Ctrl+S</span>
                 </div>
                 <div class="shortcut-item">
-                    <span class="shortcut-desc">New Note</span>
+                    <span class="shortcut-desc">✨ Nova Nota</span>
                     <span class="shortcut-key">Ctrl+N</span>
                 </div>
                 <div class="shortcut-item">
-                    <span class="shortcut-desc">New Folder</span>
+                    <span class="shortcut-desc">📁 Nova Pasta</span>
                     <span class="shortcut-key">Ctrl+Shift+N</span>
                 </div>
                 <div class="shortcut-item">
-                    <span class="shortcut-desc">Quick Note (Global)</span>
+                    <span class="shortcut-desc">⚡ Nota Rápida (Global)</span>
                     <span class="shortcut-key">Ctrl+Insert</span>
                 </div>
                 <div class="shortcut-item">
-                    <span class="shortcut-desc">Focus Folder Tree</span>
+                    <span class="shortcut-desc">🎯 Foco na Árvore de Pastas</span>
                     <span class="shortcut-key">Ctrl+F</span>
                 </div>
                 <div class="shortcut-item">
-                    <span class="shortcut-desc">Refresh</span>
+                    <span class="shortcut-desc">🔄 Atualizar</span>
                     <span class="shortcut-key">F5</span>
                 </div>
                 <div class="shortcut-item">
-                    <span class="shortcut-desc">Clear Editor</span>
+                    <span class="shortcut-desc">🗑️ Limpar Editor</span>
                     <span class="shortcut-key">Ctrl+W</span>
                 </div>
                 <div class="shortcut-item">
-                    <span class="shortcut-desc">Delete Item</span>
+                    <span class="shortcut-desc">❌ Excluir Item</span>
                     <span class="shortcut-key">Delete</span>
                 </div>
             </div>
         </section>
 
         <section id="faq" class="faq">
-            <h2 class="section-title">Frequently Asked <span>Questions</span></h2>
+            <h2 class="section-title">Perguntas <span>Frequentes</span></h2>
             <div class="faq-grid">
                 <div class="faq-item">
                     <button class="faq-question" aria-expanded="false">
-                        Is KAIRUS really free?
+                        O KAIRUS é realmente gratuito?
                         <span class="faq-icon">▼</span>
                     </button>
                     <div class="faq-answer">
-                        <p>Yes! KAIRUS is completely free and open source. No hidden fees, no subscriptions, no premium tiers.</p>
+                        <p>Sim! O KAIRUS é completamente gratuito e de código aberto. Sem taxas escondidas, sem assinaturas, sem níveis premium. Acreditamos que segurança e privacidade devem ser acessíveis a todos.</p>
                     </div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question" aria-expanded="false">
-                        Can I sync notes between devices?
+                        Posso sincronizar anotações entre dispositivos?
                         <span class="faq-icon">▼</span>
                     </button>
                     <div class="faq-answer">
-                        <p>KAIRUS is designed to be 100% offline for maximum security. However, you can manually sync your data folder using any cloud service.</p>
+                        <p>O KAIRUS foi projetado para ser 100% offline visando máxima segurança. No entanto, você pode sincronizar manualmente sua pasta de dados usando qualquer serviço em nuvem como Google Drive, Dropbox ou OneDrive.</p>
                     </div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question" aria-expanded="false">
-                        What happens if I forget my password?
+                        O que acontece se eu esquecer minha senha?
                         <span class="faq-icon">▼</span>
                     </button>
                     <div class="faq-answer">
-                        <p>Due to the encryption, there's no password recovery option. Your notes are only accessible with your password. Keep it safe!</p>
+                        <p>Devido à criptografia de ponta a ponta, não há opção de recuperação de senha. Suas anotações só podem ser acessadas com sua senha. Mantenha-a segura e considere usar um gerenciador de senhas!</p>
                     </div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question" aria-expanded="false">
-                        Is KAIRUS available on Mac/Linux?
+                        O KAIRUS está disponível para Mac/Linux?
                         <span class="faq-icon">▼</span>
                     </button>
                     <div class="faq-answer">
-                        <p>Currently, we officially support Windows. Mac/Linux versions are in development and coming soon!</p>
+                        <p>Atualmente, temos suporte oficial para Windows. As versões para Mac e Linux estão em desenvolvimento ativo e chegarão em breve! Siga nosso GitHub para atualizações.</p>
                     </div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question" aria-expanded="false">
-                        How secure is the encryption?
+                        Quão segura é a criptografia?
                         <span class="faq-icon">▼</span>
                     </button>
                     <div class="faq-answer">
-                        <p>KAIRUS uses AES-256-CBC, the same standard used by governments and militaries worldwide, combined with PBKDF2 key derivation.</p>
+                        <p>O KAIRUS usa AES-256-CBC, o mesmo padrão usado por governos e forças armadas mundialmente, combinado com derivação de chave PBKDF2 (100.000 iterações) e sal único por nota.</p>
                     </div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question" aria-expanded="false">
-                        Can I export my notes?
+                        Posso exportar minhas anotações?
                         <span class="faq-icon">▼</span>
                     </button>
                     <div class="faq-answer">
-                        <p>Yes! You can export individual notes as PDF or TXT files. Batch export is coming in a future update.</p>
+                        <p>Sim! Você pode exportar anotações individuais como arquivos PDF ou TXT com formatação preservada. A exportação em lote e formatos adicionais (Markdown, HTML) virão em atualizações futuras.</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <section id="download" class="download">
-            <h2>Ready to get <span>started</span>?</h2>
-            <p>Download KAIRUS today and take control of your notes with military-grade encryption.</p>
-            <div class="download-buttons">
-                <a href="#" class="btn-primary" id="downloadBtn">📥 Download for Windows</a>
-                <a href="#" class="btn-secondary" id="sourceBtn">🐍 View Source Code</a>
-            </div>
-            <div class="download-requirements">
-                <p>✓ Python 3.8+</p>
-                <p>✓ Windows 10/11</p>
-                <p>✓ 100MB free space</p>
+            <div class="download-container">
+                <div class="download-content">
+                    <h2>Pronto para <span>começar</span>?</h2>
+                    <p>Baixe o KAIRUS hoje e tenha controle sobre suas anotações com criptografia de nível militar.</p>
+                    <div class="download-buttons">
+                        <a href="https://github.com/EduardoDosSantosFerreira/kairus/releases/download/kairus_v1.0.0/kairus.exe" class="btn-primary" id="downloadBtn">
+                            📥 Baixar para Windows
+                        </a>
+                        <a href="https://github.com/EduardoDosSantosFerreira/kairus" class="btn-secondary" id="sourceBtn">
+                            🐍 Ver Código Fonte
+                        </a>
+                    </div>
+                    <div class="download-requirements">
+                        <div class="req-item">✓ Python 3.8+</div>
+                        <div class="req-item">✓ Windows 10/11</div>
+                        <div class="req-item">✓ 100MB livre</div>
+                    </div>
+                </div>
+                <div class="download-illustration">
+                    <img src="icon.png" alt="Download illustration" onerror="this.src='https://placehold.co/300x300/244235/f3f8f4?text=KAIRUS'">
+                </div>
             </div>
         </section>
     </main>
@@ -241,99 +274,113 @@
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-section">
-                <h3>KAIRUS</h3>
-                <p>Secure note taking for the privacy-conscious.</p>
+                <img src="../icon.png" alt="KAIRUS" class="footer-logo">
+                <p>Anotações seguras para quem se preocupa com privacidade.</p>
                 <div class="social-links">
-                    <a href="#">GitHub</a>
-                    <a href="#">Documentation</a>
-                    <a href="#">Report Issue</a>
+                    <a href="https://github.com/EduardoDosSantosFerreira/kairus">🐙 GitHub</a>
+                    <a href="#">📚 Docs</a>
+                    <a href="#">🐛 Reportar</a>
                 </div>
             </div>
             <div class="footer-section">
-                <h3>Product</h3>
+                <h3>Produto</h3>
                 <ul>
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#security">Security</a></li>
+                    <li><a href="#features">Recursos</a></li>
+                    <li><a href="#security">Segurança</a></li>
                     <li><a href="#download">Download</a></li>
                     <li><a href="#">Changelog</a></li>
                 </ul>
             </div>
             <div class="footer-section">
-                <h3>Resources</h3>
+                <h3>Recursos</h3>
                 <ul>
-                    <li><a href="#">Documentation</a></li>
-                    <li><a href="#">GitHub</a></li>
+                    <li><a href="#">Documentação</a></li>
+                    <li><a href="https://github.com/EduardoDosSantosFerreira/kairus">GitHub</a></li>
                     <li><a href="#faq">FAQ</a></li>
                 </ul>
             </div>
             <div class="footer-section">
-                <h3>Support</h3>
+                <h3>Suporte</h3>
                 <ul>
                     <li><a href="#faq">FAQ</a></li>
-                    <li><a href="#">Report Issue</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Reportar Problema</a></li>
+                    <li><a href="#">Contato</a></li>
                 </ul>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2024 KAIRUS - Secure Note Taking Application. All rights reserved.</p>
-            <p>Made with ❤️ for privacy and security</p>
+            <p>&copy; 2025 KAIRUS - Aplicativo Seguro para Anotações. Todos os direitos reservados.</p>
+            <p>Feito com ❤️ para privacidade e segurança</p>
             <div class="footer-links">
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Service</a>
-                <a href="#">License (MIT)</a>
+                <a href="#">Política de Privacidade</a>
+                <a href="#">Termos de Serviço</a>
+                <a href="#">Licença MIT</a>
             </div>
         </div>
     </footer>
 
     <script>
-        // Smooth scroll for navigation
+        // Smooth scroll com offset para navbar fixa
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href === '#') return;
+                
                 e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
+                const target = document.querySelector(href);
                 if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
+                    const offset = 80;
+                    const elementPosition = target.offsetTop - offset;
+                    window.scrollTo({
+                        top: elementPosition,
+                        behavior: 'smooth'
                     });
                 }
             });
         });
 
-        // Download button
-        document.getElementById('downloadBtn')?.addEventListener('click', (e) => {
-            e.preventDefault();
-            alert('📥 Download information:\n\nKAIRUS is available as source code.\n\nTo get started:\n1. Install Python 3.8+\n2. pip install -r requirements.txt\n3. python main.py\n\nCheck the documentation for more details.');
-        });
+        // Botão de download
+        const downloadBtn = document.getElementById('downloadBtn');
+        if (downloadBtn) {
+            downloadBtn.addEventListener('click', (e) => {
+                console.log('Download iniciado');
+            });
+        }
 
-        // Source code button
-        document.getElementById('sourceBtn')?.addEventListener('click', (e) => {
-            e.preventDefault();
-            alert('🔗 Source Code:\n\nKAIRUS is open source!\n\nThe complete source code is available with the application.\n\nIncludes:\n• Full Python source\n• PySide6 UI components\n• AES-256 encryption\n• Complete documentation');
-        });
+        // Botão de código fonte
+        const sourceBtn = document.getElementById('sourceBtn');
+        if (sourceBtn) {
+            sourceBtn.addEventListener('click', (e) => {
+                console.log('Redirecionando para GitHub');
+            });
+        }
 
-        // Mobile menu toggle
+        // Menu mobile
         const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
         const navLinks = document.querySelector('.nav-links');
         
-        mobileMenuBtn?.addEventListener('click', () => {
-            const expanded = mobileMenuBtn.getAttribute('aria-expanded') === 'true';
-            mobileMenuBtn.setAttribute('aria-expanded', !expanded);
-            navLinks?.classList.toggle('show');
-        });
+        if (mobileMenuBtn) {
+            mobileMenuBtn.addEventListener('click', () => {
+                const expanded = mobileMenuBtn.getAttribute('aria-expanded') === 'true';
+                mobileMenuBtn.setAttribute('aria-expanded', !expanded);
+                navLinks?.classList.toggle('show');
+                document.body.style.overflow = expanded ? '' : 'hidden';
+            });
+        }
 
-        // Scroll effect for navbar
+        // Navbar scroll effect
         window.addEventListener('scroll', () => {
             const navbar = document.querySelector('.navbar');
-            if (window.scrollY > 50) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
+            if (navbar) {
+                if (window.scrollY > 50) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
             }
         });
 
-        // FAQ accordion
+        // FAQ Accordion
         document.querySelectorAll('.faq-question').forEach(button => {
             button.addEventListener('click', () => {
                 const expanded = button.getAttribute('aria-expanded') === 'true';
@@ -347,7 +394,7 @@
             });
         });
 
-        // Intersection Observer for animations
+        // Intersection Observer para animações
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -50px 0px'
@@ -369,11 +416,22 @@
             observer.observe(el);
         });
 
-        // Hero animation
+        // Animação do hero
         setTimeout(() => {
             const heroTitle = document.querySelector('.hero h1');
             if (heroTitle) heroTitle.style.opacity = '1';
         }, 100);
+
+        // Fechar menu mobile ao clicar em link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                if (navLinks?.classList.contains('show')) {
+                    navLinks.classList.remove('show');
+                    mobileMenuBtn?.setAttribute('aria-expanded', 'false');
+                    document.body.style.overflow = '';
+                }
+            });
+        });
     </script>
 </body>
 </html>

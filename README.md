@@ -6,9 +6,8 @@
 
 # KAIRUS
 
-> Aplicativo de anotações seguras com criptografia de nível militar.
-> 100% offline. Privacidade em primeiro lugar.
-
+> Aplicativo de anotações seguras com criptografia.
+> 100% offline.
 </div>
 
 ---
@@ -228,9 +227,6 @@ Este projeto está licenciado sob a licença MIT.
 <div align="center">
 
 # KAIRUS
-
-Secure Note Taking for the Privacy-Conscious.
-
-© 2024 KAIRUS — Todos os direitos reservados.
+© 2026 KAIRUS — Todos os direitos reservados.
 
 </div>

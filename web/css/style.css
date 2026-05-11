@@ -923,3 +923,142 @@ body {
     transform: translateY(0);
   }
 }
+/* Hero Badge */
+.hero-badge {
+    margin-bottom: 1.5rem;
+}
+
+.badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #2e7d5e, #1a4d3a);
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+}
+
+/* Preview Overlay */
+.hero-preview {
+    position: relative;
+}
+
+.preview-overlay {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.7rem;
+    color: #3ba07a;
+    font-weight: 600;
+}
+
+/* Shortcuts Note */
+.shortcuts-note {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    background: rgba(46, 125, 94, 0.1);
+    border-radius: 8px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.shortcuts-note p {
+    color: #a0a0a0;
+    font-size: 0.85rem;
+    margin: 0;
+}
+
+/* Trust Badge */
+.trust-badge {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.trust-badge span {
+    background: rgba(46, 125, 94, 0.15);
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.7rem;
+    color: #3ba07a;
+}
+
+/* Feature Showcase */
+.feature-showcase {
+    text-align: center;
+}
+
+.feature-showcase img {
+    width: 120px;
+    margin-bottom: 1rem;
+    opacity: 0.9;
+}
+
+.feature-list {
+    text-align: left;
+    background: #0f0f0f;
+    padding: 1rem;
+    border-radius: 12px;
+    border: 1px solid #1a1a1a;
+}
+
+.feature-list span {
+    display: block;
+    margin: 0.5rem 0;
+    font-size: 0.8rem;
+    color: #c0c0c0;
+}
+
+/* Additional stat */
+.hero-stats .stat {
+    min-width: 80px;
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+    .hero-stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    
+    .trust-badge {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .hero-badge {
+        text-align: center;
+    }
+}
+
+/* Smooth image loading */
+img {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+/* Download section improvements */
+.download-requirements {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.req-item {
+    background: #0f0f0f;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    color: #a0a0a0;
+    border: 1px solid #1a1a1a;
+}

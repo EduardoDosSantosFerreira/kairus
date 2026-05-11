@@ -1,3 +1,6 @@
+Here's the complete README in English:
+
+```markdown
 # KAIRUS
 
 <div align="center">
@@ -6,7 +9,7 @@
 
 # KAIRUS
 
-> Aplicativo de anotações seguras com criptografia.
+> Secure note-taking application with encryption.
 > 100% offline.
 </div>
 
@@ -14,7 +17,7 @@
 
 # 📸 Interface
 
-## Tela de Cadastro
+## Registration Screen
 
 <div align="center">
   <img src="./web/img/cadastro.png" width="850">
@@ -30,55 +33,55 @@
 
 ---
 
-# 🔐 Funcionalidades
+# 🔐 Features
 
-## Criptografia AES-256
+## AES-256 Encryption
 
-Todas as anotações são protegidas utilizando AES-256-CBC com práticas modernas de criptografia.
+All notes are protected using AES-256-CBC with modern encryption practices.
 
-* Criptografia AES-256-CBC
-* Derivação de chave PBKDF2
-* 100.000 iterações
-* Salt único por criptografia
-* Padding PKCS7
-
----
-
-## 📁 Pastas Protegidas por Senha
-
-Organize suas anotações em pastas seguras com senhas personalizadas.
-
-* Proteção individual por pasta
-* Hash seguro de senhas
-* Armazenamento criptografado local
+* AES-256-CBC Encryption
+* PBKDF2 Key Derivation
+* 100,000 iterations
+* Unique salt per encryption
+* PKCS7 Padding
 
 ---
 
-## 💾 Salvamento Automático Inteligente
+## 📁 Password-Protected Folders
 
-KAIRUS salva automaticamente seu trabalho para evitar perda de dados.
+Organize your notes in secure folders with custom passwords.
 
-* Sistema de auto-save
-* Recuperação automática
-* Fallback para Vault
+* Individual folder protection
+* Secure password hashing
+* Encrypted local storage
 
 ---
 
-## 🚀 Captura Rápida de Notas
+## 💾 Smart Auto-Save
 
-Crie notas instantaneamente de qualquer lugar utilizando um atalho global.
+KAIRUS automatically saves your work to prevent data loss.
 
-| Ação       | Atalho          |
+* Auto-save system
+- Automatic recovery
+- Vault fallback
+
+---
+
+## 🚀 Quick Note Capture
+
+Create notes instantly from anywhere using a global shortcut.
+
+| Action     | Shortcut        |
 | ---------- | --------------- |
 | Quick Note | `Ctrl + Insert` |
 
 ---
 
-## 📄 Exportação de Arquivos
+## 📄 File Export
 
-Exporte suas anotações rapidamente.
+Export your notes quickly.
 
-Formatos suportados:
+Supported formats:
 
 * PDF
 * TXT
@@ -87,103 +90,103 @@ Formatos suportados:
 
 ## 🔒 100% Offline
 
-KAIRUS funciona totalmente offline.
+KAIRUS works completely offline.
 
-* Sem nuvem
-* Sem rastreamento
-* Sem telemetria
-* Sem assinaturas
-* Controle total dos dados localmente
+* No cloud
+* No tracking
+* No telemetry
+* No subscriptions
+- Full local data control
 
 ---
 
-# 🛡️ Arquitetura de Segurança
+# 🛡️ Security Architecture
 
-KAIRUS foi desenvolvido com foco em proteção de dados locais e privacidade do usuário.
+KAIRUS is built with a focus on local data protection and user privacy.
 
 ```text
 ╔══════════════════════════╗
 ║   AES-256-CBC            ║
 ║   PBKDF2 (100k iters)    ║
-║   Salt Único por Nota    ║
+║   Unique Salt per Note   ║
 ║   PKCS7 Padding          ║
 ╚══════════════════════════╝
 ```
 
-## Detalhes da Criptografia
+## Encryption Details
 
-| Componente                | Implementação               |
+| Component                | Implementation             |
 | ------------------------- | --------------------------- |
-| Algoritmo de Criptografia | AES-256-CBC                 |
-| Derivação de Chave        | PBKDF2                      |
-| Iterações                 | 100.000                     |
-| Padding                   | PKCS7                       |
-| Estratégia de Salt        | Salt único por criptografia |
+| Encryption Algorithm     | AES-256-CBC                 |
+| Key Derivation           | PBKDF2                      |
+| Iterations               | 100,000                     |
+| Padding                  | PKCS7                       |
+| Salt Strategy            | Unique salt per encryption  |
 
 ---
 
-# ⌨️ Atalhos do Teclado
+# ⌨️ Keyboard Shortcuts
 
-| Ação                      | Atalho             |
+| Action                    | Shortcut           |
 | ------------------------- | ------------------ |
-| Salvar Nota               | `Ctrl + S`         |
-| Nova Nota                 | `Ctrl + N`         |
-| Nova Pasta                | `Ctrl + Shift + N` |
-| Quick Note Global         | `Ctrl + Insert`    |
-| Focar na Árvore de Pastas | `Ctrl + F`         |
-| Atualizar                 | `F5`               |
-| Limpar Editor             | `Ctrl + W`         |
-| Excluir Item              | `Delete`           |
+| Save Note                 | `Ctrl + S`         |
+| New Note                  | `Ctrl + N`         |
+| New Folder                | `Ctrl + Shift + N` |
+| Global Quick Note         | `Ctrl + Insert`    |
+| Focus on Folder Tree      | `Ctrl + F`         |
+| Refresh                   | `F5`               |
+| Clear Editor              | `Ctrl + W`         |
+| Delete Item               | `Delete`           |
 
 ---
 
 # ❓ FAQ
 
-## O KAIRUS é realmente gratuito?
+## Is KAIRUS really free?
 
-Sim. O KAIRUS pode ser utilizado gratuitamente.
-
----
-
-## Posso sincronizar notas entre dispositivos?
-
-Atualmente não. O sistema foi projetado para funcionar localmente e offline.
+Yes. KAIRUS can be used for free.
 
 ---
 
-## O que acontece se eu esquecer minha senha?
+## Can I sync notes between devices?
 
-Por motivos de segurança, senhas não podem ser recuperadas. As criptografias foram projetadas para impedir acesso não autorizado.
-
----
-
-## O KAIRUS está disponível para Mac ou Linux?
-
-Atualmente o foco principal é Windows 10 e 11.
+Currently not. The system is designed to work locally and offline.
 
 ---
 
-## O quão segura é a criptografia?
+## What happens if I forget my password?
 
-KAIRUS utiliza AES-256-CBC com PBKDF2 e 100.000 iterações, seguindo práticas modernas de segurança para proteção local de dados.
-
----
-
-## Posso exportar minhas anotações?
-
-Sim. É possível exportar notas em PDF ou TXT.
+For security reasons, passwords cannot be recovered. The encryption is designed to prevent unauthorized access.
 
 ---
 
-# ⚙️ Requisitos
+## Is KAIRUS available for Mac or Linux?
+
+Currently the main focus is Windows 10 and 11.
+
+---
+
+## How secure is the encryption?
+
+KAIRUS uses AES-256-CBC with PBKDF2 and 100,000 iterations, following modern security practices for local data protection.
+
+---
+
+## Can I export my notes?
+
+Yes. You can export notes as PDF or TXT.
+
+---
+
+# ⚙️ Requirements
 
 * Python 3.8+
 * Windows 10/11
-* 100MB de espaço livre
+* 100MB free space
 
 ---
 
-# 🧩 Estrutura do Projeto
+# 🧩 Project Structure
 
 ```bash
 KAIRUS/
@@ -208,25 +211,26 @@ KAIRUS/
 
 ---
 
-# 🛠️ Tecnologias
+# 🛠️ Technologies
 
 * Python
 * AES-256 Encryption
 * PBKDF2
-* Armazenamento Local
-* Exportação PDF/TXT
+* Local Storage
+* PDF/TXT Export
 
 ---
 
-# 📜 Licença
+# 📜 License
 
-Este projeto está licenciado sob a licença MIT.
+This project is licensed under the MIT License.
 
 ---
 
 <div align="center">
 
 # KAIRUS
-© 2026 KAIRUS — Todos os direitos reservados.
+© 2026 KAIRUS — All rights reserved.
 
 </div>
+```

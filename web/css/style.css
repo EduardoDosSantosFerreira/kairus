@@ -1062,3 +1062,71 @@ img {
   color: #a0a0a0;
   border: 1px solid #1a1a1a;
 }
+/* Ajustes básicos para os ícones Lucide */
+[data-lucide] {
+  width: 1em;
+  height: 1em;
+  stroke-width: 2;
+  vertical-align: middle;
+}
+
+.feature-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-icon svg {
+  width: 32px;
+  height: 32px;
+}
+
+.security-badge svg,
+.badge-cert svg,
+.preview-overlay svg,
+.shortcut-desc svg,
+.trust-badge svg,
+.feature-list svg,
+.social-links svg {
+  width: 18px;
+  height: 18px;
+  margin-right: 6px;
+  flex-shrink: 0;
+}
+
+.btn-primary,
+.btn-secondary,
+.badge-cert,
+.trust-badge span,
+.feature-list span,
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+}
+
+.arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow svg {
+  width: 24px;
+  height: 24px;
+}
+
+.faq-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.faq-icon svg {
+  width: 18px;
+  height: 18px;
+  transition: transform 0.3s ease;
+}
+
+.faq-question[aria-expanded="true"] .faq-icon svg {
+  transform: rotate(180deg);
+}
